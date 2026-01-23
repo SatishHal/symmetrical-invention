@@ -60,18 +60,16 @@ author:
   avatar : "symmetrical-invention/assets/images/IMG_3604.heic"
   bio    : "Systems-Focused IT Support Specialist."
   links:
-    - label: "Website"
+    - label: "Contact"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      Number: "2268992310"
+    
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "Email"
+      icon: "fab fa-fw fa-gmail"
+      url: "https://gmail.com/"
 
 footer:
   links:
