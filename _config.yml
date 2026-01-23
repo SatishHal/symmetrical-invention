@@ -1,11 +1,27 @@
+# ================================
+# Site Settings
+# ================================
 title: "Satish's Tech Portfolio"
 email: emailsofsateesh@gmail.com
 description: >-
-  Systems-Focused IT Support Specialist
+  Systems-Focused IT Support Specialist with enterprise experience in
+  Microsoft 365, Entra ID, Active Directory, Intune, and Service Desk operations.
 
 minimal_mistakes_skin: default
 search: true
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
 
+# ================================
+# URL & Pagination
+# ================================
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+
+# ================================
+# Navigation
+# ================================
 navigation:
   main:
     - title: "Projects"
@@ -13,17 +29,15 @@ navigation:
     - title: "Resume"
       url: /resume/
 
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-
-permalink: /:categories/:title/
-paginate: 5
-paginate_path: /page:num/
-
+# ================================
+# Include Pages
+# ================================
 include:
   - _pages
 
-# GitHub Pages–compatible plugins
+# ================================
+# Plugins (GitHub Pages Compatible)
+# ================================
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -31,10 +45,13 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+# ================================
+# Author Profile (Sidebar)
+# ================================
 author:
   name: "Satish Halgi"
   avatar: "/assets/images/JPG.png"
-  bio: "IT Support Specialist"
+  bio: "IT Support / Service Desk Analyst"
   location: "Canada"
   links:
     - label: "Phone"
@@ -45,11 +62,13 @@ author:
       icon: "fas fa-fw fa-envelope"
       url: "mailto:emailsofsateesh@gmail.com"
 
-    # ✅ Resume PDF (DIRECT assets path)
     - label: "Resume"
       icon: "fas fa-fw fa-file-pdf"
-      path: "resume.md"
+      url: "/assets/resume/SATISH_HAL_Resume.pdf"
 
+# ================================
+# Footer Links
+# ================================
 footer:
   links:
     - label: "GitHub"
@@ -60,6 +79,9 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/satish-h-428163286/"
 
+# ================================
+# Defaults
+# ================================
 defaults:
   - scope:
       path: ""
@@ -68,7 +90,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
 
@@ -79,6 +101,9 @@ defaults:
       layout: single
       author_profile: true
 
+# ================================
+# Archives
+# ================================
 category_archive:
   type: liquid
   path: /categories/
