@@ -57,7 +57,7 @@ plugins:
 
 author:
   name   : "Satish Halgi"
-  avatar : "/assets/images/IMG_3604.heic"
+  avatar : "symmetrical-invention/assets/images/IMG_3604.heic"
   bio    : "Systems-Focused IT Support Specialist."
   links:
     - label: "Website"
