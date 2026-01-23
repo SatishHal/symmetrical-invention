@@ -25,8 +25,8 @@ plugins:
 
 author:
   name   : "Satish Halgi"
-  avatar : "assets/images/WhatsApp Image 2026-01-22 at 5.40.01 PM.jpeg"
-  bio    : "Systems-Focused IT Support Specialist | Canada"
+  avatar : "assets/images/JPG.png"
+  bio    : "Systems-Focused IT Support Specialist"
   location: "Canada"
   links:
     - label: "Phone"
@@ -48,7 +48,7 @@ footer:
       url: "https://github.com/"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/"
+      url: "www.linkedin.com/in/satish-h-428163286"
 
 defaults:
   - scope:
