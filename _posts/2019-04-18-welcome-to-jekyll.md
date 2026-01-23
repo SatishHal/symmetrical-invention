@@ -17,7 +17,6 @@ Step-by-Step:
 
 
 
-
 Implement Intune Conditional Access & Endpoint Security 
 
 Lab Prerequisites 
