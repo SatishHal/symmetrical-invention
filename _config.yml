@@ -48,7 +48,7 @@ footer:
       url: "https://github.com/"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "www.linkedin.com/in/satish-h-428163286"
+      url: "www.linkedin.com/in/satish-h-428163286.index.html"
 
 defaults:
   - scope:
