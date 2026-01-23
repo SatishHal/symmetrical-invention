@@ -1,45 +1,78 @@
-#!/bin/bash
+title: Satish's Tech Portfolio
+email: emailsofsateesh@gmail.com
+description: >-
+  Systems-Focused IT Support Specialist
+minimal_mistakes_skin: default
+search: true
 
-echo "============================================"
-echo " About Me – Satish Halgi"
-echo "============================================"
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
 
-echo "Location : Canada"
-echo "Contact  : +1 226-899-2310 | emailsofsateesh@gmail.com"
-echo "LinkedIn : https://www.linkedin.com/in/satish-h-428163286/"
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
 
-echo ""
-echo "I am a Senior IT Support and Endpoint Management professional with over"
-echo "8 years of experience supporting enterprise environments."
-echo "My expertise includes Microsoft 365, Entra ID (Azure AD), Intune,"
-echo "and Windows 10/11 device management."
+include:
+  - _pages
 
-echo ""
-echo "I specialize in implementing Intune Conditional Access and Endpoint"
-echo "Security policies to ensure devices are secure, compliant, and"
-echo "authorized before accessing corporate resources."
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 
-echo ""
-echo "Key Highlights:"
-echo "- Implemented Intune device compliance policies (BitLocker, AV, Firewall)"
-echo "- Deployed Microsoft Defender Endpoint Security baselines"
-echo "- Configured Entra ID Conditional Access for compliant device access"
-echo "- Tested and validated access using Windows 11 lab environments"
-echo "- Monitored compliance and remediation through Endpoint Manager"
+author:
+  name   : "Satish Halgi"
+  avatar : "/assets/images/IMG_3604.heic"
+  bio    : "Systems-Focused IT Support Specialist | Canada"
+  location: "Canada"
+  links:
+    - label: "Phone"
+      icon: "fas fa-fw fa-phone"
+      url: "tel:+12268992310"
 
-echo ""
-echo "Outcome:"
-echo "- Secure and compliant device enrollment"
-echo "- Controlled access to Microsoft 365 applications"
-echo "- Reduced risk of unauthorized access"
-echo "- Improved visibility into endpoint security posture"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:emailsofsateesh@gmail.com"
 
-echo ""
-echo "Tools & Technologies:"
-echo "Microsoft Intune | Entra ID (Azure AD) | Conditional Access"
-echo "Windows 10/11 | Microsoft Defender | Microsoft 365 | ServiceNow"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
 
-echo ""
-echo "Focus:"
-echo "Security-first mindset with strong troubleshooting,"
-echo "clear documentation, and operational efficiency."
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+
+tag_archive:
+  type: liquid
+  path: /tags/
