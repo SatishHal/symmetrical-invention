@@ -1,78 +1,65 @@
-title: Satish's Tech Portfolio
-email: emailsofsateesh@gmail.com
-description: >-
-  Systems-Focused IT Support Specialist
-minimal_mistakes_skin: default
-search: true
+#!/bin/bash
 
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+echo "============================================"
+echo " About Me – Satish Halgi"
+echo "============================================"
 
-permalink: /:categories/:title/
-paginate: 5
-paginate_path: /page:num/
+echo "Name      : Satish Halgi"
+echo "Role      : Senior IT Support | Endpoint & Security Operations"
+echo "Location  : Canada"
+echo "Phone     : +1 226-899-2310"
+echo "Email     : emailsofsateesh@gmail.com"
+echo "LinkedIn  : https://www.linkedin.com/in/satish-h-428163286/"
+echo "Portfolio : https://satishhalgi.github.io"
 
-include:
-  - _pages
+echo ""
+echo "Professional Summary:"
+echo "I am a Senior IT Support and Endpoint Management professional with 8+ years"
+echo "of enterprise experience supporting Microsoft 365, Entra ID (Azure AD),"
+echo "Intune, and Windows 10/11 environments."
+echo "My focus is securing devices, enforcing compliance, and controlling access"
+echo "to corporate resources through Conditional Access and Endpoint Security."
 
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
+echo ""
+echo "Key Implementation – Intune Conditional Access & Endpoint Security:"
+echo "- Implemented Intune device compliance policies (BitLocker, AV, Firewall, OS)"
+echo "- Deployed Microsoft Defender Endpoint Security baselines"
+echo "- Configured Entra ID Conditional Access to allow access only from compliant devices"
+echo "- Tested access control using Windows 11 lab environments"
+echo "- Monitored compliance and remediation via Endpoint Manager"
 
-author:
-  name   : "Satish Halgi"
-  avatar : "assets/images/JPG.png"
-  bio    : "Systems-Focused IT Support Specialist"
-  location: "Canada"
-  links:
-    - label: "Phone"
-      icon: "fas fa-fw fa-phone"
-      url: "tel:+12268992310"
+echo ""
+echo "Security Outcome:"
+echo "- Devices remain secure and compliant"
+echo "- Only authorized devices access corporate resources"
+echo "- Reduced risk of unauthorized access"
+echo "- Improved visibility into device compliance and security posture"
 
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:emailsofsateesh@gmail.com"
+echo ""
+echo "Technologies:"
+echo "Microsoft Intune | Entra ID (Azure AD) | Conditional Access"
+echo "Windows 10/11 | Microsoft Defender | Microsoft 365 | ServiceNow"
 
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+echo ""
+echo "Creating root index.html for GitHub Pages & LinkedIn compatibility..."
 
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "www.linkedin.com/in/satish-h-428163286.index.html"
+cat <<EOF > index.html
+---
+layout: home
+author_profile: true
+title: "Satish Halgi | IT Support & Endpoint Security"
+---
 
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+EOF
 
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
+echo "index.html created successfully."
 
-category_archive:
-  type: liquid
-  path: /categories/
+echo ""
+echo "Deployment Steps:"
+echo "git add index.html"
+echo "git commit -m 'Add homepage and profile info for LinkedIn'"
+echo "git push"
 
-tag_archive:
-  type: liquid
-  path: /tags/
+echo ""
+echo "Status:"
+echo "Portfolio root URL is now LinkedIn-ready."
