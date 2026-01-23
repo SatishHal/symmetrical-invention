@@ -26,7 +26,7 @@ plugins:
 author:
   name   : "Satish Halgi"
   avatar : "assets/images/JPG.png"
-  bio    : "Systems-Focused | IT Support Specialist"
+  bio    : "IT Support Specialist"
   location: "Canada"
   links:
     - label: "Phone"
@@ -37,9 +37,6 @@ author:
       icon: "fas fa-fw fa-envelope"
       url: "mailto:emailsofsateesh@gmail.com"
 
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
 
 footer:
   links:
