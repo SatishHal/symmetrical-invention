@@ -1,6 +1,6 @@
 ---
 title: "Implement Intune Conditional Access & Endpoint Security"
-date: 2026-01-23
+date: 2025-08-23
 categories:
   - projects
   - endpoint-security
@@ -15,41 +15,148 @@ author_profile: true
 read_time: true
 ---
 
-```bash
-#!/bin/bash
+I implemented Intune policies to secure devices, enforce compliance, and streamline access to corporate resources. By doing this It ensures devices are secure, compliant, and only authorized devices can access corporate resources. 
 
-echo "============================================"
-echo " Intune Conditional Access & Endpoint Security"
-echo "============================================"
+Step-by-Step: Implement Intune Conditional Access & Endpoint Security 
 
-echo "Objective:"
-echo "Secure corporate devices, enforce compliance, and control access"
-echo "to Microsoft 365 resources using Microsoft Intune and Entra ID."
+Lab Prerequisites 
 
-echo ""
-echo "Implementation Summary:"
-echo "- Created Entra ID security group for corporate users"
-echo "- Configured Intune compliance policies (BitLocker, AV, Firewall)"
-echo "- Deployed Microsoft Defender Endpoint Security baseline"
-echo "- Implemented Conditional Access requiring compliant devices"
-echo "- Tested access using Windows 11 lab environment"
+Windows 11 VM (Pro, 22H2 or later recommended) 
 
-echo ""
-echo "Security Controls Enforced:"
-echo "- BitLocker encryption"
-echo "- Microsoft Defender Antivirus"
-echo "- Firewall enabled"
-echo "- Minimum OS version compliance"
-echo "- Real-time and network protection"
+Microsoft Entra ID (Azure AD) with admin privileges 
 
-echo ""
-echo "Result:"
-echo "- Devices securely enrolled in Intune"
-echo "- Only compliant devices allowed access"
-echo "- Improved endpoint security posture"
-echo "- Reduced risk of unauthorized access"
+Intune subscription (included with Microsoft 365 E3/E5 or trial) 
 
-echo ""
-echo "Tools Used:"
-echo "Microsoft Intune | Entra ID (Azure AD) | Conditional Access"
-echo "Windows 11 | Microsoft Defender | Microsoft 365"
+User account for testing (in Entra ID, member of Corporate Users group) 
+
+ 
+
+Step 1: Prepare Your Entra ID Environment 
+
+Sign in to the Microsoft Entra Admin Center. 
+
+Create a security group for your test users: 
+
+Name: Corporate Users 
+
+Type: Security 
+
+Membership: Assigned 
+
+Add your test user(s) to this group. 
+
+ 
+
+Step 2: Configure Device Compliance Policies in Intune 
+
+Go to Microsoft Endpoint Manager Admin Center. 
+
+Navigate to: Devices → Compliance policies → Policies → Create Policy. 
+
+Platform: Windows 10 and later 
+
+Settings to configure: 
+
+Require BitLocker encryption: Yes 
+
+Require antivirus (Windows Defender): Yes 
+
+Require firewall: Yes 
+
+Minimum OS version: Windows 11 22H2 (for lab consistency) 
+
+Assign the policy to the Corporate Users group. 
+
+Save and create the policy. 
+
+ 
+
+Step 3: Configure Endpoint Security Profiles 
+
+In Endpoint Manager: Endpoint security → Security baselines → + Create profile 
+
+Platform: Windows 10 and later 
+
+Profile type: Microsoft Defender for Endpoint Security Baseline 
+
+Configure key security settings: 
+
+Turn on real-time protection 
+
+Enable network protection 
+
+Enforce automatic updates 
+
+Assign the profile to the Corporate Users group. 
+
+ 
+
+Step 4: Create Conditional Access Policy 
+
+Go to Entra Admin Center → Security → Conditional Access → + New Policy 
+
+Name: Require Compliant Device for Cloud Apps 
+
+Assignments: 
+
+Users: Corporate Users group 
+
+Cloud apps: All cloud apps (or select specific apps like Microsoft Teams, SharePoint) 
+
+Conditions (optional for lab testing): 
+
+Locations: Include All, Exclude Trusted IPs if needed 
+
+Device platforms: Windows 
+
+Access controls → Grant: Require device to be marked as compliant 
+
+Enable policy: On 
+
+Save policy 
+
+ 
+
+Step 5: Test Conditional Access 
+
+Log in to your Windows 11 VM with your test user account. 
+
+Go to a Microsoft 365 app (Teams, SharePoint, or Outlook web). 
+
+If device is non-compliant, access should be blocked. 
+
+Apply the compliance policy to make the device compliant. 
+
+Refresh the browser/app and verify access is now granted. 
+
+ 
+
+Step 6: Monitor Compliance & Reports 
+
+In Endpoint Manager: Devices → Monitor → Device compliance 
+
+Check that your VM is showing compliant 
+
+Review policy results and remediation actions if required 
+
+ 
+
+Step 7: Optional – Automate Remediation 
+
+Configure automatic remediation for non-compliant devices: 
+
+Navigate: Devices → Compliance policies → Settings 
+
+Enable automatic action to notify user or block access until compliant 
+
+ 
+
+✅ Result 
+
+Device is now securely enrolled in Intune 
+
+Compliance policies ensure security requirements (BitLocker, firewall, antivirus) 
+
+Conditional Access ensures only compliant devices access corporate resources 
+
+Endpoint Security profiles enforce Microsoft Defender baseline settings 
