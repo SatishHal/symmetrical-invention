@@ -48,7 +48,7 @@ author:
     # ✅ Resume PDF (DIRECT assets path)
     - label: "Resume"
       icon: "fas fa-fw fa-file-pdf"
-      path: "/assets/SATISH_HAL_Resume.pdf"
+      path: "resume.md"
 
 footer:
   links:
