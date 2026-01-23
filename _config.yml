@@ -36,6 +36,10 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:emailsofsateesh@gmail.com"
+   
+    - label: "Resume"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/assets/resume/Satish_Halgi_Resume.pdf"
 
 
 footer:
