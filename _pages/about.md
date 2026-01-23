@@ -2,9 +2,7 @@
 # ============================================
 # About Me – Satish Halgi
 # ============================================
-
 echo "Senior IT Support & Endpoint Security Professional | Canada"
-
 # Professional Overview
 echo "I am an experienced IT Support and Endpoint Management professional with 8+ years of hands-on experience"
 echo "supporting enterprise environments across Microsoft 365, Entra ID (Azure AD), Intune, and Windows platforms."
