@@ -6,6 +6,13 @@ description: >-
 minimal_mistakes_skin: default
 search: true
 
+navigation:
+  main:
+    - title: "Projects"
+      url: /categories/projects/
+    - title: "Resume"
+      url: /resume/
+
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 
