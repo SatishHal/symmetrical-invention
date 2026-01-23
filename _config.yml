@@ -25,7 +25,7 @@ plugins:
 
 author:
   name   : "Satish Halgi"
-  avatar : "/assets/images/IMG_3604.heic"
+  avatar : "assets/images/JPG.png"
   bio    : "Systems-Focused | IT Support Specialist"
   location: "Canada"
   links:
@@ -48,7 +48,7 @@ footer:
       url: "https://github.com/"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/"
+      url: "https://www.linkedin.com/in/satish-h-428163286/?trk=opento_sprofile_topcard"
 
 defaults:
   - scope:
