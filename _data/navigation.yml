@@ -1,9 +1,53 @@
-main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
+---
+title: "About Me"
+permalink: /about/
+layout: single
+author_profile: true
+---
+
+```bash
+#!/bin/bash
+
+echo "============================================"
+echo " About Me – Satish Halgi"
+echo "============================================"
+
+echo "Location : Canada"
+echo "Contact  : +1 226-899-2310 | emailsofsateesh@gmail.com"
+echo "LinkedIn : https://www.linkedin.com/in/satish-h-428163286/"
+
+echo ""
+echo "I am a IT Support and Endpoint Management professional with over"
+echo "8 years of experience supporting enterprise environments."
+echo "My expertise includes Microsoft 365, Entra ID (Azure AD), Intune,"
+echo "and Windows 10/11 device management."
+
+echo ""
+echo "I specialize in implementing Intune Conditional Access and Endpoint"
+echo "Security policies to ensure devices are secure, compliant, and"
+echo "authorized before accessing corporate resources."
+
+echo ""
+echo "Key Highlights:"
+echo "- Implemented Intune device compliance policies (BitLocker, AV, Firewall)"
+echo "- Deployed Microsoft Defender Endpoint Security baselines"
+echo "- Configured Entra ID Conditional Access for compliant device access"
+echo "- Tested and validated access using Windows 11 lab environments"
+echo "- Monitored compliance and remediation through Endpoint Manager"
+
+echo ""
+echo "Outcome:"
+echo "- Secure and compliant device enrollment"
+echo "- Controlled access to Microsoft 365 applications"
+echo "- Reduced risk of unauthorized access"
+echo "- Improved visibility into endpoint security posture"
+
+echo ""
+echo "Tools & Technologies:"
+echo "Microsoft Intune | Entra ID (Azure AD) | Conditional Access"
+echo "Windows 10/11 | Microsoft Defender | Microsoft 365 | ServiceNow"
+
+echo ""
+echo "Focus:"
+echo "Security-first mindset with strong troubleshooting,"
+echo "clear documentation, and operational efficiency."
