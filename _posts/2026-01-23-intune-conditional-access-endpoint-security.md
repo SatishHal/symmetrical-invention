@@ -17,7 +17,9 @@ read_time: true
 
 I implemented Intune policies to secure devices, enforce compliance, and streamline access to corporate resources. By doing this It ensures devices are secure, compliant, and only authorized devices can access corporate resources. 
 
-Step-by-Step: Implement Intune Conditional Access & Endpoint Security 
+Step-by-Step: 
+
+Implement Intune Conditional Access & Endpoint Security 
 
 Lab Prerequisites 
 
@@ -31,7 +33,9 @@ User account for testing (in Entra ID, member of Corporate Users group)
 
  
 
-Step 1: Prepare Your Entra ID Environment 
+Step 1: 
+
+Prepare Your Entra ID Environment 
 
 Sign in to the Microsoft Entra Admin Center. 
 
@@ -47,7 +51,9 @@ Add your test user(s) to this group.
 
  
 
-Step 2: Configure Device Compliance Policies in Intune 
+Step 2: 
+
+Configure Device Compliance Policies in Intune 
 
 Go to Microsoft Endpoint Manager Admin Center. 
 
@@ -71,7 +77,10 @@ Save and create the policy.
 
  
 
-Step 3: Configure Endpoint Security Profiles 
+Step 3: 
+
+
+Configure Endpoint Security Profiles 
 
 In Endpoint Manager: Endpoint security → Security baselines → + Create profile 
 
@@ -91,7 +100,10 @@ Assign the profile to the Corporate Users group.
 
  
 
-Step 4: Create Conditional Access Policy 
+Step 4: 
+
+
+Create Conditional Access Policy 
 
 Go to Entra Admin Center → Security → Conditional Access → + New Policy 
 
@@ -117,7 +129,10 @@ Save policy
 
  
 
-Step 5: Test Conditional Access 
+Step 5: 
+
+
+Test Conditional Access 
 
 Log in to your Windows 11 VM with your test user account. 
 
@@ -131,7 +146,10 @@ Refresh the browser/app and verify access is now granted.
 
  
 
-Step 6: Monitor Compliance & Reports 
+Step 6: 
+
+
+Monitor Compliance & Reports 
 
 In Endpoint Manager: Devices → Monitor → Device compliance 
 
@@ -141,7 +159,10 @@ Review policy results and remediation actions if required
 
  
 
-Step 7: Optional – Automate Remediation 
+Step 7: 
+
+
+Optional – Automate Remediation 
 
 Configure automatic remediation for non-compliant devices: 
 
@@ -152,6 +173,7 @@ Enable automatic action to notify user or block access until compliant
  
 
 ✅ Result 
+
 
 Device is now securely enrolled in Intune 
 
