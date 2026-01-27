@@ -28,7 +28,8 @@ navigation:
       url: /categories/projects/
     - title: "Resume"
       url: /resume/
-
+ - title: "About"
+    url: /about/
 # ================================
 # Include Pages
 # ================================
