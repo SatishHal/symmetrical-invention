@@ -1,0 +1,169 @@
+---
+title: "From Phish to Ransom: Infostealer-Driven Attack Analysis"
+categories:
+  - projects
+tags:
+  - IT Help Desk
+  - SaaS Support
+  - Security Operations
+  - Phishing Analysis
+  - Malware Analysis
+  - Incident Response
+layout: single
+author_profile: true
+read_time: true
+---
+Overview
+
+Performed a practical phishing and malware analysis to understand how infostealer attacks can escalate into ransomware incidents in enterprise and SaaS environments. The project focused on safely analyzing a phishing email, identifying malicious indicators, and documenting incident response actions relevant to IT and Service Desk roles.
+
+Step 1: Identify the Threat Scenario
+
+A phishing email containing a malicious attachment was identified as a potential security incident. Such emails are commonly reported to IT and Service Desk teams and often serve as the initial access vector for larger attacks.
+
+Step 2: Define the Analysis Objective
+
+The goal was to:
+
+Safely analyze the phishing email and attachment
+
+Identify malware behavior and classification
+
+Assess potential business impact
+
+Determine appropriate incident response actions
+
+Step 3: Prepare a Safe Analysis Environment
+
+Created a dedicated Python virtual environment to ensure isolation from the host system and prevent accidental execution of malicious content.
+
+python3 -m venv malware_analysis
+source malware_analysis/bin/activate
+
+Step 4: Parse the Phishing Email
+
+Developed a Python-based workflow to:
+
+Parse .eml phishing email files
+
+Extract headers and message content
+
+Safely extract attachments
+
+Generate SHA-256 hashes for extracted files
+
+This allowed repeatable and controlled analysis of phishing emails.
+
+Step 5: Validate File Integrity with Hashing
+
+Generated SHA-256 hashes for extracted attachments to ensure accurate identification and enable comparison against known threat intelligence sources.
+
+Step 6: Use AI-Assisted Tooling Responsibly
+
+ChatGPT was used as an assistive tool to accelerate initial script creation. The generated code was:
+
+Reviewed line-by-line
+
+Tested against sample emails
+
+Corrected where hashing results were inaccurate
+
+Final implementation relied on the eml_parser library’s built-in hashing functionality to ensure correctness and accountability.
+
+Step 7: Analyze Indicators Using Threat Intelligence Platforms
+
+The extracted file hash was analyzed using publicly available platforms:
+
+VirusTotal indicated malicious behavior
+
+Tria.ge confirmed the malware as AgentTesla
+
+Step 8: Identify Malware Capabilities
+
+AgentTesla is a known infostealer capable of:
+
+Credential theft
+
+Browser and system data collection
+
+Exfiltration of stolen data via SMTP
+
+Step 9: Assess Business Impact
+
+Infostealers often act as an initial foothold. Stolen credentials and system data are frequently sold to ransomware-as-a-service (RaaS) operators, turning a single phishing email into a broader ransomware incident.
+
+Potential impact includes:
+
+Credential compromise
+
+Lateral movement
+
+Data exfiltration
+
+Ransomware deployment
+
+Operational disruption
+
+Step 10: Incident Response — Attachment Executed
+
+If the attachment had been executed:
+
+Isolate the affected device immediately
+
+Disable and reset user credentials
+
+Reimage the system before reconnecting
+
+Hunt for related indicators (SMTP or C2 traffic)
+
+Provide targeted phishing awareness training
+
+Step 11: Incident Response — Attachment Not Executed
+
+If the attachment was not opened:
+
+Review endpoint and network logs
+
+Perform precautionary scans
+
+Educate the user in a non-punitive manner
+
+Step 12: Documentation & Reporting
+
+Documented:
+
+Analysis steps
+
+Indicators of compromise
+
+Business impact
+
+Incident response recommendations
+
+Clear documentation supports faster response and knowledge sharing across IT and security teams.
+
+Outcome
+
+Demonstrated phishing and malware analysis fundamentals
+
+Improved understanding of infostealer-to-ransomware attack chains
+
+Practiced incident response decision-making
+
+Reinforced safe handling and documentation practices
+
+Tools Used
+
+Python (Virtual Environments)
+
+eml_parser
+
+VirusTotal
+
+Tria.ge
+
+ChatGPT (AI-assisted scripting)
+
+Disclaimer
+
+All analysis was conducted in a controlled, educational environment using non-production systems. No live malware was executed on production devices.
