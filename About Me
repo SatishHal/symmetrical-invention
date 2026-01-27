@@ -1,39 +1,67 @@
-#!/bin/bash
-# ============================================
-# About Me – Satish Halgi
-# ============================================
+---
+title: "About Me"
+permalink: /about/
+layout: single
+author_profile: true
+---
+## IT Support & Service desk | Canada
 
-echo "Senior IT Support & Endpoint Security Professional | Canada"
+I am an experienced IT Support and Endpoint Management professional with **7 years of hands-on experience** supporting enterprise environments across **Microsoft 365, Entra ID (Azure AD), Intune, and Windows platforms**.
 
-# Professional Overview
-echo "I am an experienced IT Support and Endpoint Management professional with 8+ years of hands-on experience"
-echo "supporting enterprise environments across Microsoft 365, Entra ID (Azure AD), Intune, and Windows platforms."
-echo "My core strength lies in implementing secure, compliant, and scalable device access solutions."
+My core strength lies in implementing **secure, compliant, and scalable device access solutions** that align with organizational security requirements.
 
-# What I Do Best
-echo "I specialize in implementing Microsoft Intune Conditional Access and Endpoint Security policies"
-echo "to ensure that only compliant and authorized devices can access corporate resources."
-echo "My work focuses on balancing strong security controls with a seamless end-user experience."
+---
 
-# Key Implementation Highlights
-echo "- Designed and deployed Intune device compliance policies enforcing BitLocker, antivirus, firewall, and OS standards"
-echo "- Configured Endpoint Security baselines using Microsoft Defender for Endpoint"
-echo "- Implemented Conditional Access policies in Entra ID to restrict access to compliant devices only"
-echo "- Integrated identity, device compliance, and access control for Microsoft 365 applications"
-echo "- Tested, validated, and monitored policy enforcement using real-world lab scenarios"
+## What I Do Best
 
-# Security & Operations Impact
-echo "These implementations ensure:"
-echo "- Secure device enrollment and management"
-echo "- Continuous compliance monitoring"
-echo "- Reduced risk of unauthorized access"
-echo "- Improved operational efficiency and security posture"
+I specialize in implementing **Microsoft Intune Conditional Access and Endpoint Security policies** to ensure that only **compliant and authorized devices** can access corporate resources.
 
-# Tools & Technologies
-echo "Technologies I work with daily:"
-echo "Microsoft Intune | Entra ID (Azure AD) | Conditional Access | Endpoint Security"
-echo "Windows 10/11 | Microsoft Defender | Microsoft 365 | ServiceNow"
+My work focuses on balancing **strong security controls** with a **seamless end-user experience**.
 
-# Mindset
-echo "I bring a security-first, operations-focused mindset with strong documentation,"
-echo "clear communication, and a passion for continuous improvement in enterprise IT environments."
+---
+
+## Key Implementation Highlights
+
+- Designed and deployed Intune device compliance policies enforcing:
+  - BitLocker encryption  
+  - Antivirus and firewall standards  
+  - Operating system compliance  
+- Configured Endpoint Security baselines using **Microsoft Defender for Endpoint**
+- Implemented **Conditional Access policies** in Entra ID to restrict access to compliant devices
+- Integrated identity, device compliance, and access control for **Microsoft 365 applications**
+- Tested, validated, and monitored policy enforcement using real-world lab scenarios
+
+---
+
+## Security & Operations Impact
+
+These implementations help ensure:
+
+- Secure device enrollment and lifecycle management  
+- Continuous compliance monitoring  
+- Reduced risk of unauthorized access  
+- Improved operational efficiency and security posture  
+
+---
+
+## Tools & Technologies
+
+**Technologies I work with regularly:**
+
+- Microsoft Intune  
+- Entra ID (Azure AD)  
+- Conditional Access  
+- Endpoint Security  
+- Windows 10 / 11  
+- Microsoft Defender  
+- Microsoft 365  
+- ServiceNow  
+
+---
+
+## Professional Mindset
+
+I bring a **security-first, operations-focused mindset** with an emphasis on:
+- Clear documentation  
+- Effective communication  
+- Continuous improvement in enterprise IT environments  
