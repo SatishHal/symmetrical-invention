@@ -1,6 +1,5 @@
 main:
   - title: "Recent Posts"
     url: /
-  - title: "About"
+  - title: "about"
     url: /about/
-
